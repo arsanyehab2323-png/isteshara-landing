@@ -1,0 +1,488 @@
+/* =========================
+   Google Font
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap');
+
+/* =========================
+   Reset
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #1E293B;
+    overflow-x: hidden;
+}
+
+/* =========================
+   Colors
+========================= */
+:root {
+    --primary: #0A2E7A;
+    --secondary: #00B8F0;
+    --light: #F8FBFF;
+    --dark: #1E293B;
+    --white: #ffffff;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+.logo img {
+    height: 55px;
+    max-width: 150px;
+    object-fit: contain;
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
+/* =========================
+   BUTTONS (GENERAL)
+========================= */
+.btn-primary {
+    text-decoration: none;
+    background: var(--primary);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: .3s;
+    white-space: nowrap;
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+}
+
+/* =========================
+   SECONDARY BUTTON (خدماتنا)
+========================= */
+.btn-secondary {
+    text-decoration: none;
+    background: transparent;
+    color: var(--primary);
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: 2px solid var(--primary);
+    transition: .3s;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* =========================
+   CTA CONTROL
+========================= */
+.desktop-btn {
+    display: inline-block;
+}
+
+.mobile-btn {
+    display: none !important;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+    min-height: 90vh;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    color: var(--primary);
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    line-height: 2;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.services {
+    padding: 100px 5%;
+    background: var(--light);
+}
+
+.section-title {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: #666;
+    line-height: 2;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+    font-size: 40px;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* =========================
+   WHY US
+========================= */
+.why-us {
+    padding: 100px 5%;
+}
+
+.why-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.why-card {
+    background: var(--light);
+    padding: 40px 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: .3s;
+}
+
+.why-card:hover {
+    transform: scale(1.05);
+}
+
+.why-card i {
+    font-size: 40px;
+    color: var(--secondary);
+    margin-bottom: 15px;
+}
+
+.why-card h3 {
+    color: var(--primary);
+}
+
+/* =========================
+   CTA
+========================= */
+.cta {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+    line-height: 2;
+}
+
+.cta .btn-primary {
+    background: white;
+    color: var(--primary);
+}
+
+.cta .btn-primary:hover {
+    background: var(--light);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #081f57;
+    color: white;
+    padding: 70px 5% 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-container h3 {
+    margin-bottom: 20px;
+    color: var(--secondary);
+}
+
+.footer-container a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+.footer-container a:hover {
+    color: white;
+}
+
+.footer-container i {
+    margin-left: 10px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #aaa;
+}
+
+/* =========================
+   WHATSAPP
+========================= */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    z-index: 1000;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+    transition: .3s;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+   BACK TO TOP
+========================= */
+#topBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+    transition: .3s;
+}
+
+#topBtn:hover {
+    background: var(--secondary);
+}
+
+/* =========================
+   MENU TOGGLE
+========================= */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--primary);
+}
+
+/* =========================
+   MOBILE FIX
+========================= */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 15px 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .desktop-btn {
+        display: none !important;
+    }
+
+    .mobile-btn {
+        display: block !important;
+        margin-top: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0;
+        min-height: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-container,
+    .why-container {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .cta h2 {
+        font-size: 1.8rem;
+    }
+}
